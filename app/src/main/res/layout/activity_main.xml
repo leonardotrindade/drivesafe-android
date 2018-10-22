@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/av_camera"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="vigilance_camera.json"
+        app:lottie_loop="true"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/av_warning"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="warning.json"
+        app:lottie_loop="true"/>
+
+    <Button
+        android:id="@+id/btn_awake"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:text="@string/action_awake"
+        android:textStyle="bold" />
+
+</android.support.constraint.ConstraintLayout>
